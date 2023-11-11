@@ -429,7 +429,7 @@ The process is given as such:
 4. The created `MarkCommandParser` then parses the parameters of the command via the `parse()` method.
 5. If the parse is successful, a new instance of `MarkCommand` with the relevant parsed parameters is created and returned to the caller.
 6. The `MarkCommand` object is then returned back to `LogicManager`, which invokes the `execute()` method of the `MarkCommand` object.
-    1. `MarkCommand` will then call the `setTask()` method on `Model`, which will in turn call the `setTask()` method on `TaskWise`, replacing the old `Task` with a new instance of the `Task` with an updated completed status.
+    1. `MarkCommand` will then call the `setTask()` method on `Model`, which will in turn call the `setTask()` method on `TaskWise`, replacing the old `Task` with a new instance of the `Task` with an updated completed status. The instance of `Task` has been omitted from the sequence diagram above, for simplicity sake.
     2. If the existing `Task` is already marked as completed, an exception is thrown to inform the user that they are attempting to `mark` a `Task` already marked as completed.
     3. If the marking of the `Task` is successful, a new `CommandResult` object is then created and returned to the caller of the `MarkCommand::execute()` method.
 7. `LogicManager` receives the `CommandResult` object returned from the execution of the `MarkCommand` and parses it.
@@ -455,7 +455,7 @@ The process is given as such:
 4. The created `UnmarkCommandParser` then parses the parameters of the command via the `parse()` method.
 5. If the parse is successful, a new instance of `UnmarkCommand` with the relevant parsed parameters is created and returned to the caller.
 6. The `UnmarkCommand` object is then returned back to `LogicManager`, which invokes the `execute()` method of the `UnmarkCommand` object.
-    1. `UnmarkCommand` will then call the `setTask()` method on `Model`, which will in turn call the `setTask()` method on `TaskWise`, replacing the old `Task` with a new instance of the `Task` with an updated incomplete status.
+    1. `UnmarkCommand` will then call the `setTask()` method on `Model`, which will in turn call the `setTask()` method on `TaskWise`, replacing the old `Task` with a new instance of the `Task` with an updated incomplete status. The instance of `Task` has been omitted from the sequence diagram above, for simplicity sake.
     2. If the existing `Task` is already marked as incomplete, an exception is thrown to inform the user that they are attempting to `unmark` a `Task` already marked as incomplete.
     3. If the marking of the `Task` is successful, a new `CommandResult` object is then created and returned to the caller of the `UnmarkCommand::execute()` method.
 7. `LogicManager` receives the `CommandResult` object returned from the execution of the `MarkCommand` and parses it.
@@ -487,7 +487,7 @@ The process is given as such:
 5. If the parse is successful, a new instance of `EditCommand` with the relevant parsed parameters is created and returned to the caller.
 6. The `EditCommand` object is then returned back to `LogicManager`, which invokes the `execute()` method of the `EditCommand` object.
     1. `EditCommand` will then call the `getFilteredTaskList()` method on `Model`, retrieving the filtered task lists before calling the `get(Index)` method on the task lists to retrieve the task to edit.
-    2. `EditCommand` will then call its `createEditedTask(Task, EditTaskDescriptor)` method which will create a new instance of `Task` with the updated set of members.
+    2. `EditCommand` will then call its `createEditedTask(Task, EditTaskDescriptor)` method which will create a new instance of `Task` with the updated set of members. The instance of `Task` has been omitted from the sequence diagram above, for simplicity sake.
     3.  After which, it will replace the old `Task` with the new instance of `Task` in the task list.
     4. If the edit is successful, a new `CommandResult` object is then created and returned to the caller of the `EditCommand::execute()` method.
 7. `LogicManager` receives the `CommandResult` object returned from the execution of the `EditCommand` and parses it
@@ -582,7 +582,7 @@ The process is given as such:
 4. The created `NoteCommandParser` then parses the parameters of the command via the `parse()` method.
 5. If the parse is successful, a new instance of `NoteCommand` with the relevant parsed parameters is created and returned to the caller.
 6. The `NoteCommand` object is then returned back to `LogicManager`, which invokes the `execute()` method of the `NoteCommand` object.
-    1. Then, `NoteCommand` invokes the `setTask()` method on `Model`, which in turn invokes the `setTask()` method on `TaskWise`, replacing the old Task with a new instance of the Task with the Note.
+    1. Then, `NoteCommand` invokes the `setTask()` method on `Model`, which in turn invokes the `setTask()` method on `TaskWise`, replacing the old Task with a new instance of the Task with the Note. The instance of `Task` has been omitted from the sequence diagram above, for simplicity sake.
     2. A new `CommandResult` object detailing the success of the `note` command is then created and returned to the caller of the `NoteCommand::execute()` method.
 7. `LogicManager` receives the `CommandResult` object returned from the execution of the `NoteCommand` and parses it.
 8. The execution of `NoteCommand` terminates.
