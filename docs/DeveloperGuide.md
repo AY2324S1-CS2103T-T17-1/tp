@@ -399,7 +399,7 @@ The process is given as such:
 4. The created `AddCommandParser` then parses the parameters of the command via the `parse()` method.
 5. If the parse is successful, a new instance of `AddCommand` with the relevant parsed parameters is created and returned to the caller.
 6. The `AddCommand` object is then returned back to `LogicManager`, which invokes the `execute()` method of the `AddCommand` object.
-    1. `AddCommand` will then call its `createAddedTask(AddTaskDescriptor)` method which will create a new instance of `Task` with the given inputs.
+    1. `AddCommand` will then call its `createAddedTask(AddTaskDescriptor)` method which will create a new instance of `Task` with the given inputs. The instance of `Task` has been omitted from the sequence diagram above, for simplicity sake.
     2. After which, it will add the newly created `Task` into the task list using the `addTask(task)`.
     3. If the addition is successful, a new `CommandResult` object is then created and returned to the caller of the `AddCommand::execute()` method.
 7. `LogicManager` receives the `CommandResult` object returned from the execution of the `AddCommand` and parses it.
