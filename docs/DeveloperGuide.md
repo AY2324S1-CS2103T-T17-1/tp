@@ -1133,7 +1133,7 @@ Use case ends.
 * **CLI**: A Command Line Interface is a text-based interface where users can interact with the software by typing commands.
 * **Command**: A sequence of words that represents an action that TaskWise can understand and execute.
 * **Deadline**: A class that represents the date that the task needs to be completed by.
-* **Field**: Refers to the `Status`, `Deadline`, `Priority`, `Description`, `Member` of a Task.
+* **Field/Parameter**: Refers to the `Status`, `Deadline`, `Priority`, `Description`, `Member` of a Task.
 * **GUI**: A Graphical User Interface is a visual interface where users can interact with the software through on-screen elements like buttons and windows.
 * **JAR**: A file that contains all the resources needed for TaskWise to run.
 * **Java**: A general-purpose programming language on which TextWise is built.

@@ -47,6 +47,7 @@ Here's a quick summary of what TaskWise can do for you:
   - [Improve Find Command To Find By Priority, Deadline, Members and Notes](#improve-find-command-to-find-by-priority-deadline-members-and-notes)
   - [Case-insensitive Sort](#case-insensitive-sort)
   - [Case-insensitive Ordering of Members](#case-insensitive-ordering-of-members)
+- [Glossary](#glossary)
 - [FAQ](#faq)
   - [General Questions](#general-questions)
   - [Task-Related Questions](#task-related-questions)
@@ -121,7 +122,7 @@ Now that we got the basics out of the way, let's jump right into the guide!
 :information_source: In this installation guide, you'll see the term "JDK" being used. Don't worry! JDK stands for "Java Development Kit", and you can treat it as the same as Java!
 </div>
 
-3. Download the latest `taskwise.jar` from [this page](https://github.com/AY2324S1-CS2103T-T17-1/tp/releases/tag/V1.3.1).
+3. Download the latest `taskwise.jar` from [this page](https://github.com/AY2324S1-CS2103T-T17-1/tp/releases/latest).
 4. Drag and drop the file from your computer's downloads into any folder you want.
 5. Open up the [terminal](https://support.apple.com/en-sg/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac) (Mac), [terminal emulator](https://www.redhat.com/sysadmin/linux-terminal-window) (Linux) or [command prompt](https://support.kaspersky.com/common/windows/14637#block0) (Windows).
 6. Type `cd` followed by the directory path to the folder where you have downloaded TaskWise to navigate there and press `Enter`. For example, if you have downloaded TaskWise to your desktop, you can type the following command:
@@ -1075,6 +1076,27 @@ Currently, members added to a Task appear on the Task Card as well as the Side P
 While there are no known workarounds for this issue, we recommend that you remain consistent in your capitalisation of the names of the members to avoid this unexpected behaviour showing up while you are using TaskWise!
 
 We also recognise that this may be inconvenient for you, as you cannot define your personal ordering of members assigned to a particular part, and as such, we aim to amend this behaviour in a future release of TaskWise, which would allow you to define your own ordering of members for all your tasks!
+
+# Glossary
+
+* **Argument**: A word or number or a sequence of words or numbers that represent.
+* **CLI**: A Command Line Interface is a text-based interface where users can interact with the software by typing commands.
+* **Command**: A sequence of words that represents an action that TaskWise can understand and execute.
+* **Deadline**: A class that represents the date that the task needs to be completed by.
+* **Field/Parameter**: Refers to the `Status`, `Deadline`, `Priority`, `Description`, `Member` of a Task.
+* **GUI**: A Graphical User Interface is a visual interface where users can interact with the software through on-screen elements like buttons and windows.
+* **JAR**: A file that contains all the resources needed for TaskWise to run.
+* **Java**: A general-purpose programming language on which TextWise is built.
+* **Member**: A class that represents the name of the project's group member(s).
+* **Note**: A class that represents the additional string of information that you want to attach to a task
+* **Priority**: A class that represents the priority level of the task.
+* **Sort Order**: The ascending or descending order to sort the task list by
+* **Sort Type**: The fields within Task used to sort the task list by
+* **Status**: A class that represents whether a task is completed or not.
+* **System**: The TaskWise program.
+* **Task**: A Task is a completable objective with or without a deadline.
+
+[[Jump to Table of Content]](#table-of-content)
 
 # FAQ
 
